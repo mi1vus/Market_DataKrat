@@ -1,6 +1,6 @@
 ﻿namespace MarketView
 {
-    partial class Form1
+    partial class MarketMainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,7 @@
             // 
             // CreateBuyCheck
             // 
+            this.CreateBuyCheck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CreateBuyCheck.Location = new System.Drawing.Point(3, 3);
             this.CreateBuyCheck.Name = "CreateBuyCheck";
             this.CreateBuyCheck.Size = new System.Drawing.Size(100, 65);
@@ -52,6 +53,7 @@
             // 
             // CreateReturnCheck
             // 
+            this.CreateReturnCheck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CreateReturnCheck.Location = new System.Drawing.Point(109, 3);
             this.CreateReturnCheck.Name = "CreateReturnCheck";
             this.CreateReturnCheck.Size = new System.Drawing.Size(100, 65);
@@ -61,6 +63,7 @@
             // 
             // CancelCheck
             // 
+            this.CancelCheck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CancelCheck.Location = new System.Drawing.Point(215, 3);
             this.CancelCheck.Name = "CancelCheck";
             this.CancelCheck.Size = new System.Drawing.Size(100, 65);
@@ -70,6 +73,7 @@
             // 
             // SaveCheck
             // 
+            this.SaveCheck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SaveCheck.Location = new System.Drawing.Point(321, 3);
             this.SaveCheck.Name = "SaveCheck";
             this.SaveCheck.Size = new System.Drawing.Size(102, 65);
@@ -111,15 +115,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(432, 305);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
-            // Form1
+            // MarketMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 305);
             this.Controls.Add(this.tableLayoutPanel2);
             this.MinimumSize = new System.Drawing.Size(450, 350);
-            this.Name = "Form1";
+            this.Name = "MarketMainForm";
             this.Text = "Market 0.1";
+            this.Load += new System.EventHandler(this.MarketMainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CheckBS)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
