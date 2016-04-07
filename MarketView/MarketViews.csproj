@@ -85,6 +85,7 @@
     </Compile>
     <None Include="Properties\DataSources\MarketModels.Check.datasource" />
     <None Include="Properties\DataSources\MarketModels.Good.datasource" />
+    <None Include="Properties\DataSources\MarketModels.ReportItem.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -52,12 +52,14 @@
     <Compile Include="Models\barcode.cs" />
     <Compile Include="Models\check_head.cs" />
     <Compile Include="Models\check_pos.cs" />
+    <Compile Include="Models\Mapping\reportViewMap.cs" />
+    <Compile Include="Models\reportView.cs" />
     <Compile Include="Models\good.cs" />
     <Compile Include="Models\Mapping\barcodeMap.cs" />
     <Compile Include="Models\Mapping\check_headMap.cs" />
     <Compile Include="Models\Mapping\check_posMap.cs" />
     <Compile Include="Models\Mapping\goodMap.cs" />
-    <Compile Include="Models\MarketContext.cs" />
+    <Compile Include="MarketContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
