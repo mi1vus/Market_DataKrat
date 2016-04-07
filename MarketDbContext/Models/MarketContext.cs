@@ -1,8 +1,9 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using MarketDbContext.Models.Mapping;
+using MarketDbContext.Models;
 
-namespace MarketDbContext.Models
+namespace MarketDbContext
 {
     public partial class MarketContext : DbContext
     {
@@ -11,8 +12,8 @@ namespace MarketDbContext.Models
             Database.SetInitializer<MarketContext>(null);
         }
 
-        public MarketContext()
-            : base("Name=MarketContext")
+        public MarketContext(string connString)
+            : base(connString)
         {
         }
 

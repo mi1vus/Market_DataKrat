@@ -5,7 +5,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Db", "Db\Db.sqlproj", "{838
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketDbContext", "MarketDbContext\MarketDbContext.csproj", "{A95509B9-56ED-4E86-8399-C19E20FC7DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketView", "MarketView\MarketView.csproj", "{5AE53396-1B4B-4CD5-B01C-87CEC1741372}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketViews", "MarketView\MarketViews.csproj", "{5AE53396-1B4B-4CD5-B01C-87CEC1741372}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketController", "MarketController\MarketController.csproj", "{BC2FE795-115C-4D70-A495-18AF26A34AFD}"
 EndProject

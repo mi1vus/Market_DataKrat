@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MarketService
 {
-    public class Class1
+    public class MarketService
     {
+        private static string connectionString { get; set; }
     }
 }
