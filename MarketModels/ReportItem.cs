@@ -30,7 +30,7 @@ namespace MarketModels
         {
             get
             {
-                return SummReturn.ToString("0,000.00");
+                return "-" + SummReturn.ToString("0,000.00");
             }
         }
 

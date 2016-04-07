@@ -5,6 +5,7 @@ namespace MarketDbContext.Models
 {
     public partial class reportView
     {
+        public int id { get; set; }
         public Nullable<DateTime> dateBuy { get; set; }
         public Nullable<DateTime> dateReturn { get; set; }
         public Nullable<decimal> summBuy { get; set; }

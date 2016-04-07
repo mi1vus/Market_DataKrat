@@ -7,10 +7,11 @@ namespace MarketDbContext.Models.Mapping
     {
         public reportViewMap()
         {
-            HasKey(t => new { t.dateBuy, t.dateReturn });
+            HasKey(t => t.id);
 
             // Table & Column Mappings
             this.ToTable("ReportView");
+            this.Property(t => t.id).HasColumnName("id");
             this.Property(t => t.dateBuy).HasColumnName("dateBuy");
             this.Property(t => t.dateReturn).HasColumnName("dateReturn");
             this.Property(t => t.summBuy).HasColumnName("summBuy");
