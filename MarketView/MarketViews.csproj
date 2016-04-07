@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCheckItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCheckItem.Designer.cs">
+      <DependentUpon>AddCheckItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="MarketMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCheckItem.resx">
+      <DependentUpon>AddCheckItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MarketMainForm.resx">
       <DependentUpon>MarketMainForm.cs</DependentUpon>
     </EmbeddedResource>

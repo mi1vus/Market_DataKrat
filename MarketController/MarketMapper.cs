@@ -8,6 +8,9 @@ namespace MarketController
     class MarketMapper
     {
         public static MarketModels.Good GoodMap(MarketDbContext.Models.good src, MarketModels.Good dst = null) {
+            if (src == null)
+                return null;
+
             if (dst == null)
                 dst = new MarketModels.Good();
 

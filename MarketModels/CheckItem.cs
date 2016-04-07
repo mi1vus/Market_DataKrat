@@ -18,14 +18,14 @@ namespace MarketModels
                 if (Good != null){
                     SummItem = Convert.ToDecimal(PrivateQuantity) * Good.Price;
                     if (OnSummChanged != null)
-                        OnSummChanged(this, EventArgs.Empty);
+                        OnSummChanged(this, null);
                 }
             } 
         }
-        public decimal SummItem { get; set; }
+        public decimal SummItem { get; private set; }
         public int GoodId { get; set; }
         public Good Good { get; set; }
 
-        public static event EventHandler OnSummChanged;
+        public event System.Collections.Specialized.NotifyCollectionChangedEventHandler OnSummChanged;
     }
 }
