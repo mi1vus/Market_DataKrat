@@ -7,6 +7,10 @@ using MarketDbContext.Models;
 
 namespace MarketDbContext
 {
+    /// <summary>
+    /// Контекст базы данных занимающийся построением объектной модели данных,
+    /// хранящихся в БД
+    /// </summary>
     public partial class MarketContext : DbContext
     {
         static MarketContext()

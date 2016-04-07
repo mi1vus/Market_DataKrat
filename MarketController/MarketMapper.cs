@@ -5,8 +5,18 @@ using System.Text;
 
 namespace MarketController
 {
+    /// <summary>
+    /// Класс занимающийся преобразованием типов
+    /// от объектов контекста БД к моделям приложения и обратно
+    /// </summary>
     class MarketMapper
     {
+        /// <summary>
+        /// Получение модели товара из сущьности БД
+        /// </summary>
+        /// <param name="src"></param>
+        /// <param name="dst"></param>
+        /// <returns></returns>
         public static MarketModels.Good GoodMap(MarketDbContext.Models.good src, MarketModels.Good dst = null) {
             if (src == null)
                 return null;
@@ -19,7 +29,12 @@ namespace MarketController
             dst.Price = src.price;
             return dst;
         }
-
+        /// <summary>
+        /// Приведение модели чека к сущьности БД
+        /// </summary>
+        /// <param name="src"></param>
+        /// <param name="dst"></param>
+        /// <returns></returns>
         public static MarketDbContext.Models.check_head CheckMap(MarketModels.Check src, MarketDbContext.Models.check_head dst = null)
         {
             if (src == null)
@@ -35,7 +50,12 @@ namespace MarketController
 
             return dst;
         }
-
+        /// <summary>
+        /// Приведение модели позиции в чеке к сущьности БД
+        /// </summary>
+        /// <param name="src"></param>
+        /// <param name="dst"></param>
+        /// <returns></returns>
         public static MarketDbContext.Models.check_pos CheckItemMap(MarketModels.CheckItem src, MarketDbContext.Models.check_pos dst = null)
         {
             if (src == null)
@@ -51,7 +71,12 @@ namespace MarketController
 
             return dst;
         }
-
+        /// <summary>
+        /// Получение модели записи в отчете из сущьности в БД
+        /// </summary>
+        /// <param name="src"></param>
+        /// <param name="dst"></param>
+        /// <returns></returns>
         public static MarketModels.ReportItem ReportItemMap(MarketDbContext.Models.reportView src, MarketModels.ReportItem dst = null)
         {
             if (src == null)

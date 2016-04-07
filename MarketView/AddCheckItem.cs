@@ -9,6 +9,9 @@ using System.Windows.Forms;
 
 namespace MarketView
 {
+    /// <summary>
+    /// Форма для поиска товаров по их штрих кодам
+    /// </summary>
     public partial class AddCheckItem : Form
     {
         public MarketModels.Good Good { get; set; }

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MarketModels
 {
+    /// <summary>
+    /// Данные за день в отчете
+    /// </summary>
     public class ReportItem
     {
-
         public DateTime Date { get; set; }
         public string DateString { 
             get {

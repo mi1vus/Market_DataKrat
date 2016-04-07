@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MarketModels
 {
+    /// <summary>
+    /// Позиция в чеке
+    /// </summary>
     public class CheckItem
     {
         public int Num { get; set; }
@@ -16,8 +19,10 @@ namespace MarketModels
             set{
                 PrivateQuantity = value;
                 if (Good != null){
+                    // пересчитываем цену всей позиции
                     SummItem = Convert.ToDecimal(PrivateQuantity) * Good.Price;
                     if (OnSummChanged != null)
+                        // генерируем событие для пересчета суммы всего чека
                         OnSummChanged(this, null);
                 }
             } 
@@ -26,6 +31,10 @@ namespace MarketModels
         public int GoodId { get; set; }
         public Good Good { get; set; }
 
+        /// <summary>
+        /// Событие которое будет вызвано при изменении количества товара
+        /// для автоматического пересчета суммы всего чека
+        /// </summary>
         public event System.Collections.Specialized.NotifyCollectionChangedEventHandler OnSummChanged;
     }
 }

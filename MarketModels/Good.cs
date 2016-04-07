@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MarketModels
 {
+    /// <summary>
+    /// Товар
+    /// </summary>
     public class Good
     {
         public int Id { get; set; }
