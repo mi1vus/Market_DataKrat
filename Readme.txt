@@ -4,9 +4,10 @@
 Для развертывания приложения необходимо развернуть исходный бэкап базы данных на любом MS SQL сервере, 
 выполнить скрипт из папки Scripts солюшена на развернутую базу данных и изменить connectionString в app.config приложения, 
 прописав там SQL сервер и данные учетной записи пользователя в секции
-  <connectionStrings>
-    <add name="MarketConnectionString" connectionString="Data Source=MILVUS-ПК;Initial Catalog=Market;Timeout=10000;Persist Security Info=True;User ID=sa;Password=sa" providerName="System.Data.SqlClient" />
-  </connectionStrings>
+
+\<connectionStrings>
+	\<add name="MarketConnectionString" connectionString="Data Source=MILVUS-ПК;Initial Catalog=Market;Timeout=10000;Persist Security Info=True;User ID=sa;Password=sa" providerName="System.Data.SqlClient" />
+\</connectionStrings>
 
 После этого можно собрать проект и запустить .exe файл.
 Замечена одна особенность в производительности приложения, при первом поиске товара или построении отчета строится дерево запросов
